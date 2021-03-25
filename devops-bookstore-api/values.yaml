@@ -5,11 +5,10 @@
 replicaCount: 3
 
 image:
-  
   repository: eu.gcr.io/terraforma-tech-returners/devops-bookstore-api
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "3.0"
   containerPort: 5000
   livenessProbe: /books
   readinessProbe: /books
